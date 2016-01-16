@@ -1,43 +1,34 @@
 package com.demo.yunketang.entity;
 
-/**
- * Created by lianyuchen on 16/1/3.
- */
-public class EnrollmentInfo {
-    private int enrollment_id;
-    private CourseInfo courseInfo;
-    private StudentInfo studentInfo;
+import java.io.Serializable;
 
-    @Override
-    public String toString() {
-        return "EnrollmentInfo{" +
-                "enrollment_id=" + enrollment_id +
-                ", courseInfo=" + courseInfo +
-                ", studentInfo=" + studentInfo +
-                '}';
-    }
+public class EnrollmentInfo implements Serializable {
 
-    public int getEnrollment_id() {
-        return enrollment_id;
-    }
-
-    public void setEnrollment_id(int enrollment_id) {
-        this.enrollment_id = enrollment_id;
-    }
-
-    public CourseInfo getCourseInfo() {
-        return courseInfo;
-    }
-
-    public void setCourseInfo(CourseInfo courseInfo) {
-        this.courseInfo = courseInfo;
-    }
-
-    public StudentInfo getStudentInfo() {
-        return studentInfo;
-    }
-
-    public void setStudentInfo(StudentInfo studentInfo) {
-        this.studentInfo = studentInfo;
-    }
+	private int enrollment_id;
+	private int student_id;
+	private int classinfo_id;
+	public int getEnrollment_id() {
+		return enrollment_id;
+	}
+	public void setEnrollment_id(int enrollment_id) {
+		this.enrollment_id = enrollment_id;
+	}
+	public int getStudent_id() {
+		return student_id;
+	}
+	public void setStudent_id(int student_id) {
+		this.student_id = student_id;
+	}
+	public int getClassinfo_id() {
+		return classinfo_id;
+	}
+	public void setClassinfo_id(int classinfo_id) {
+		this.classinfo_id = classinfo_id;
+	}
+	@Override
+	public String toString() {
+		return "Enrollment [enrollment_id=" + enrollment_id + ", student_id="
+				+ student_id + ", classinfo_id=" + classinfo_id + "]";
+	}
+	
 }

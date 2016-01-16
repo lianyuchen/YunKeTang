@@ -1,43 +1,42 @@
 package com.demo.yunketang.entity;
 
-/**
- * Created by lianyuchen on 16/1/3.
- */
-public class CourseInfo {
-    private int course_id;
-    private String course_name;
-    private String course_time;
+import java.io.Serializable;
 
-    public int getCourse_id() {
-        return course_id;
-    }
+public class CourseInfo implements Serializable {
 
-    public void setCourse_id(int course_id) {
-        this.course_id = course_id;
-    }
-
-    public String getCourse_name() {
-        return course_name;
-    }
-
-    public void setCourse_name(String course_name) {
-        this.course_name = course_name;
-    }
-
-    public String getCourse_time() {
-        return course_time;
-    }
-
-    public void setCourse_time(String course_time) {
-        this.course_time = course_time;
-    }
-
-    @Override
-    public String toString() {
-        return "CourseInfo{" +
-                "course_id=" + course_id +
-                ", course_name='" + course_name + '\'' +
-                ", course_time='" + course_time + '\'' +
-                '}';
-    }
+	private int classinfo_id;
+	private String classinfo_name;
+	private String classinfo_time;
+	private String classindo_location;
+	public int getClassinfo_id() {
+		return classinfo_id;
+	}
+	public void setClassinfo_id(int classinfo_id) {
+		this.classinfo_id = classinfo_id;
+	}
+	public String getClassinfo_name() {
+		return classinfo_name;
+	}
+	public void setClassinfo_name(String classinfo_name) {
+		this.classinfo_name = classinfo_name;
+	}
+	public String getClassinfo_time() {
+		return classinfo_time;
+	}
+	public void setClassinfo_time(String classinfo_time) {
+		this.classinfo_time = classinfo_time;
+	}
+	public String getClassindo_location() {
+		return classindo_location;
+	}
+	public void setClassindo_location(String classindo_location) {
+		this.classindo_location = classindo_location;
+	}
+	@Override
+	public String toString() {
+		return "ClassInfo [classinfo_id=" + classinfo_id + ", classinfo_name="
+				+ classinfo_name + ", classinfo_time=" + classinfo_time
+				+ ", classindo_location=" + classindo_location + "]";
+	}
+	
 }

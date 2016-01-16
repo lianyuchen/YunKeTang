@@ -1,11 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.demo.yunketang.activity.LoginActivity">
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/user_login_title"
+        layout="@layout/title_bar_view"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- created by lianyuchen on 2015/01/10 -->
+        <!-- 放置3个输入框，并通过background属性完成按钮特效 -->
+
+        <EditText
+            android:id="@+id/maina_user_login_et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_border_gray_bg_selector"
+            android:hint="请输入用户名" />
+
+        <EditText
+            android:id="@+id/maina_user_login_et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_border_gray_bg_selector"
+            android:hint="请输入密码" />
+
+        <Button
+            android:id="@+id/maina_user_login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_border_bg_blue_selector"
+            android:text="登录"
+            android:textColor="@drawable/btn_text_style_selector" />
+
+        <TextView
+            android:id="@+id/maina_user_login_tv_forget"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？" />
+
+        <TextView
+            android:id="@+id/maina_user_login_tv_register"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="没有账号？" />
 
 
+
+    </LinearLayout>
 
 </LinearLayout>
